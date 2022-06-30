@@ -2,11 +2,13 @@
   "name": "grok-ajax",
   "version": "1.0.0",
   "description": "Задачи для понимания AJAX и клиент-серверной архитектуры.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "npx jest --runInBand --forceExit --bail",
     "test-dev": "TEST_MODE=development npx jest --runInBand --bail",
-    "debug-test": "node --inspect-brk node_modules/.bin/jest --runInBand --bail"
+    "debug-test": "node --inspect-brk node_modules/.bin/jest --runInBand --bail",
+    "start": "node app.js",
+    "dev": "nodemon app.js --ext js,jsx,css"
   },
   "repository": {
     "type": "git",
